@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .icon {
@@ -9,4 +11,52 @@
 .icon-large {
     width: 75px;
     height: 75px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.header {
+}
+
+.sidebar {
+    grid-row: 1 / -1;
+    background-color: mediumblue;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-content: center;
+}
+
+.sidebar .dash,
+.sidebar > div > div{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.sidebar > div > div {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    gap: 20px
+}
+
+.nav > div > p,
+.info > div >p {
+    font-weight: bold;
+}
+
+.sidebar img {
+    filter: invert(1);
+}
+
+.content {
+
 }
