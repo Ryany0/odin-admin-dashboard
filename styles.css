@@ -20,6 +20,30 @@
 }
 
 .header {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    gap: 25px;
+    padding: 5px 15px 5px 15px;
+}
+
+.search-bar {
+    align-self: center;
+    display: flex;
+    gap: 15px;
+
+}
+
+.search-bar > input {
+    width: clamp(200px, 100%, 500px);
+    border: 1px;
+    border-radius: 25px;
+    background-color: gainsboro;
+    padding-left: 8px;
+}
+
+.search-bar > input:focus {
+    outline: 2px solid black;
 }
 
 .sidebar {
