@@ -1,3 +1,8 @@
+
+:root {
+    --main-color: #407899;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -24,7 +29,7 @@
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 2fr;
     gap: 15px;
-    padding: 15px 15px 5px 15px;
+    padding: 15px 5% 15px 30px;
 }
 
 .header p {
@@ -47,7 +52,7 @@
 
 .account {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     gap: 7%;
     align-items: center;
 }
@@ -72,6 +77,22 @@
     border-radius: 50%;
 }
 
+.tabs {
+    display: flex;
+    justify-content: right;
+    gap: 25px;
+    align-items: center;
+}
+
+.tabs button {
+    width: 100px;
+    height: 40px;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 25px;
+    border: 0;
+    font-weight: bold;
+}
 
 
 .search-bar > input {
@@ -88,7 +109,7 @@
 
 .sidebar {
     grid-row: 1 / -1;
-    background-color: mediumblue;
+    background-color: var(--main-color);
     color: white;
 
     display: flex;
