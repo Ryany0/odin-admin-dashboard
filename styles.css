@@ -144,5 +144,14 @@
 }
 
 .content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 30px;
+    padding: 30px;
+}
 
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-template-rows: repeat(3, minmax(200px, 1fr));
 }
