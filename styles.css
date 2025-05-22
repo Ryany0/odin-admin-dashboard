@@ -1,9 +1,16 @@
-
 :root {
     --main-color: #407899;
     --background: #e9ecef;
     --imgage-background: #CAE5FF;
+    --sub-text-color: #495057;
+
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 }
+
+@supports (font-variation-settings: normal) {
+    :root { font-family: InterVariable, sans-serif; }
+  }
 
 * {
     box-sizing: border-box;
@@ -12,8 +19,8 @@
 }
 
 .icon {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: auto;
 }
 .icon-large {
     width: 75px;
@@ -45,6 +52,10 @@
     display: flex;
     gap: 15px;
     padding-right: 10%;
+}
+
+.nav p {
+    font-size: larger;
 }
 
 .profile {
@@ -154,6 +165,10 @@
     background-color: var(--background);
 }
 
+.content h2 {
+    margin-bottom: 10px;
+}
+
 .cards {
     display: grid;
     grid-template-columns: repeat(2, minmax(400px, 1fr));
@@ -177,6 +192,10 @@
 
 .card p {
     margin-bottom: 30px;
+}
+
+.sub-text {
+    color: var(--sub-text-color);
 }
 
 .card > div {
